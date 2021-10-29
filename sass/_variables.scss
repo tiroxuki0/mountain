@@ -1,0 +1,19 @@
+@font-face {
+  font-family: textsmall;
+  src: url(../fonts/chronicle-small.otf);
+}
+@font-face {
+  font-family: textitalic;
+  src: url(../fonts/chronicle-italic.otf);
+}
+@font-face {
+  font-family: textroman;
+  src: url(../fonts/chronicle-roman.otf);
+}
+@font-face {
+  font-family: textbold;
+  src: url(../fonts/chronicle-semibold.otf);
+}
+html {
+  font-family: textsmall;
+}
