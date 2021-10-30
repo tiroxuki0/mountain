@@ -191,6 +191,12 @@ body {
 }
 @media screen and (max-width: 767px) {
   .wrapper {
+    .social {
+      left: 0;
+    }
+    .scroll-position {
+      right: 0;
+    }
     .background-wrapper {
       &::after {
         bottom: -6.9%;
@@ -209,6 +215,8 @@ body {
     }
   }
   .hero {
+    top: 200px;
+    gap: 10px;
     .heading {
       font-size: 50px;
     }

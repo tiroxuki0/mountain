@@ -250,6 +250,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .wrapper .social {
+    left: 0;
+  }
+  .wrapper .scroll-position {
+    right: 0;
+  }
   .wrapper .background-wrapper {
     height: 850px;
   }
@@ -267,6 +273,10 @@ body {
     z-index: 4;
   }
 
+  .hero {
+    top: 200px;
+    gap: 10px;
+  }
   .hero .heading {
     font-size: 50px;
   }
@@ -478,6 +488,17 @@ body {
     gap: 60px;
     margin: 0px 0px 150px 0px;
   }
+  .section1 .section1-wrapper,
+.section1 .section2-wrapper,
+.section1 .section3-wrapper,
+.section3 .section1-wrapper,
+.section3 .section2-wrapper,
+.section3 .section3-wrapper,
+.section2 .section1-wrapper,
+.section2 .section2-wrapper,
+.section2 .section3-wrapper {
+    width: 90%;
+  }
   .section1 .section1-wrapper .heading,
 .section1 .section2-wrapper .heading,
 .section1 .section3-wrapper .heading,
@@ -488,6 +509,12 @@ body {
 .section2 .section2-wrapper .heading,
 .section2 .section3-wrapper .heading {
     font-size: 40px;
+  }
+  .section1 .image,
+.section3 .image,
+.section2 .image {
+    width: 90%;
+    max-width: 90%;
   }
 }
 

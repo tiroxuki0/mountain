@@ -127,9 +127,14 @@
     .section1-wrapper,
     .section2-wrapper,
     .section3-wrapper {
+      width: 90%;
       .heading {
         font-size: 40px;
       }
+    }
+    .image {
+      width: 90%;
+      max-width: 90%;
     }
   }
 }
