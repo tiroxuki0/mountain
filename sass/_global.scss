@@ -191,14 +191,19 @@ body {
 }
 @media screen and (max-width: 767px) {
   .wrapper {
-    /* .background-wrapper{
-      #delta{
-        height: 370px;
+    .background-wrapper {
+      height: 850px;
+      #mountain {
+        height: 575px;
+        bottom: 0%;
+        z-index: 2;
       }
-      #mountain{
-             height: 57rem;
+      #delta {
+        height: 368px;
+        bottom: -6.8%;
+        z-index: 4;
       }
-    } */
+    }
   }
   .hero {
     .heading {

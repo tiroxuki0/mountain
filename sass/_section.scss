@@ -122,7 +122,14 @@
   .section2 {
     width: 100vw;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
     margin: 0px 0px 150px 0px;
+    .section1-wrapper,
+    .section2-wrapper,
+    .section3-wrapper {
+      .heading {
+        font-size: 40px;
+      }
+    }
   }
 }

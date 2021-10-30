@@ -250,15 +250,18 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .wrapper {
-    /* .background-wrapper{
-      #delta{
-        height: 370px;
-      }
-      #mountain{
-             height: 57rem;
-      }
-    } */
+  .wrapper .background-wrapper {
+    height: 850px;
+  }
+  .wrapper .background-wrapper #mountain {
+    height: 575px;
+    bottom: 0%;
+    z-index: 2;
+  }
+  .wrapper .background-wrapper #delta {
+    height: 368px;
+    bottom: -6.8%;
+    z-index: 4;
   }
 
   .hero .heading {
@@ -469,8 +472,19 @@ body {
 .section2 {
     width: 100vw;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
     margin: 0px 0px 150px 0px;
+  }
+  .section1 .section1-wrapper .heading,
+.section1 .section2-wrapper .heading,
+.section1 .section3-wrapper .heading,
+.section3 .section1-wrapper .heading,
+.section3 .section2-wrapper .heading,
+.section3 .section3-wrapper .heading,
+.section2 .section1-wrapper .heading,
+.section2 .section2-wrapper .heading,
+.section2 .section3-wrapper .heading {
+    font-size: 40px;
   }
 }
 
