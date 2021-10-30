@@ -192,6 +192,9 @@ body {
 @media screen and (max-width: 767px) {
   .wrapper {
     .background-wrapper {
+      &::after {
+        bottom: -6.9%;
+      }
       height: 850px;
       #mountain {
         height: 575px;

@@ -253,6 +253,9 @@ body {
   .wrapper .background-wrapper {
     height: 850px;
   }
+  .wrapper .background-wrapper::after {
+    bottom: -6.9%;
+  }
   .wrapper .background-wrapper #mountain {
     height: 575px;
     bottom: 0%;
