@@ -36,7 +36,7 @@ body {
   /* social end */
 
   /* scroll position start */
-  .scroll-position {
+  .scroll {
     max-width: 77px;
     height: 220px;
     position: fixed;
@@ -47,10 +47,26 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
-    border-right: 3px solid rgba(231, 231, 231, 0.5);
-    padding-right: 1.5rem;
-    &:before {
+    a {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 25%;
+      width: 100%;
+      border-right: 2px solid rgba(255, 255, 255, 0.5);
+      padding-right: 1.5rem;
+      &.active {
+        border-right: 2px solid white;
+        transition: all 0.2s linear;
+      }
+    }
+    /* #position {
       position: absolute;
       content: "";
       width: 2px;
@@ -60,15 +76,7 @@ body {
       transform: translateX(100%);
       background-color: white;
       z-index: 7;
-    }
-    span {
-      width: 90%;
-      font-size: 18px;
-      font-weight: 700;
-      color: white;
-      width: 100;
-      text-align: right;
-    }
+    } */
   }
   /* scroll position end */
 
