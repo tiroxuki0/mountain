@@ -1,6 +1,6 @@
-/* body {
+body {
   background-color: rgba(11, 29, 38, 1);
-} */
+}
 .wrapper {
   background-color: rgba(11, 29, 38, 1);
   /*  position: relative; */
@@ -77,6 +77,9 @@
     width: 100vw;
     height: 1900px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &::before {
       content: "";
       position: absolute;
@@ -97,7 +100,7 @@
       position: absolute;
       width: 100vw;
       min-height: 700px;
-      bottom: -6.6%;
+      bottom: -6.8%;
       left: 0;
       z-index: 5;
       background-image: linear-gradient(
@@ -110,12 +113,14 @@
     #mountain,
     #delta {
       position: absolute;
+      flex-shrink: 0;
     }
     #sky {
       width: 100vw;
       height: 700px;
       /* transform: translateY(-20%); */
       z-index: 1;
+      top: 0;
     }
     #mountain {
       width: 100vw;
@@ -126,7 +131,7 @@
     #delta {
       width: 100vw;
       height: 926px;
-      bottom: -6.6%;
+      bottom: -6.8%;
       z-index: 4;
     }
   }
@@ -183,4 +188,21 @@
   color: rgba(251, 215, 132, 1);
   font-size: 20px;
   text-transform: none;
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    /* .background-wrapper{
+      #delta{
+        height: 370px;
+      }
+      #mountain{
+             height: 57rem;
+      }
+    } */
+  }
+  .hero {
+    .heading {
+      font-size: 50px;
+    }
+  }
 }

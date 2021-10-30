@@ -67,9 +67,10 @@ img {
   max-width: 100%;
 }
 
-/* body {
-  background-color: rgba(11, 29, 38, 1);
-} */
+body {
+  background-color: #0b1d26;
+}
+
 .wrapper {
   background-color: #0b1d26;
   /*  position: relative; */
@@ -145,6 +146,9 @@ img {
   width: 100vw;
   height: 1900px;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper .background-wrapper::before {
   content: "";
@@ -161,7 +165,7 @@ img {
   position: absolute;
   width: 100vw;
   min-height: 700px;
-  bottom: -6.6%;
+  bottom: -6.8%;
   left: 0;
   z-index: 5;
   background-image: linear-gradient(rgba(11, 29, 38, 0), rgba(11, 29, 38, 0.2), #0b1d26);
@@ -170,12 +174,14 @@ img {
 .wrapper .background-wrapper #mountain,
 .wrapper .background-wrapper #delta {
   position: absolute;
+  flex-shrink: 0;
 }
 .wrapper .background-wrapper #sky {
   width: 100vw;
   height: 700px;
   /* transform: translateY(-20%); */
   z-index: 1;
+  top: 0;
 }
 .wrapper .background-wrapper #mountain {
   width: 100vw;
@@ -186,7 +192,7 @@ img {
 .wrapper .background-wrapper #delta {
   width: 100vw;
   height: 926px;
-  bottom: -6.6%;
+  bottom: -6.8%;
   z-index: 4;
 }
 
@@ -243,6 +249,22 @@ img {
   text-transform: none;
 }
 
+@media screen and (max-width: 767px) {
+  .wrapper {
+    /* .background-wrapper{
+      #delta{
+        height: 370px;
+      }
+      #mountain{
+             height: 57rem;
+      }
+    } */
+  }
+
+  .hero .heading {
+    font-size: 50px;
+  }
+}
 .header {
   width: 100%;
   max-width: 100vw;
@@ -273,16 +295,27 @@ img {
 }
 .header-right {
   font-size: 17px;
-  gap: 8px;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header-right .fa-bars {
+  display: none;
 }
 .header-right i,
 .header-right span {
   color: white;
 }
 
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+  .header-right .fa-bars {
+    display: inline-block;
+  }
+}
 /* .section1-wrapper::before {
   content: "01";
   position: absolute;
@@ -316,6 +349,10 @@ img {
   left: 0;
   transform: translateY(-25%);
 } */
+.section2 {
+  flex-direction: row-reverse;
+}
+
 .section1,
 .section2,
 .section3 {
@@ -413,6 +450,7 @@ img {
 .section1 .image,
 .section2 .image,
 .section3 .image {
+  /* display: none; */
   width: 100%;
   max-width: 366px;
   height: 80%;
@@ -426,8 +464,13 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .section {
+  .section1,
+.section3,
+.section2 {
+    width: 100vw;
     flex-direction: column;
+    gap: 80px;
+    margin: 0px 0px 150px 0px;
   }
 }
 
