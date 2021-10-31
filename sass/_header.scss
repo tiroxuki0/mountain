@@ -10,6 +10,58 @@
   transform: translateX(-50%);
   position: absolute;
   z-index: 2;
+  &.fixed {
+    position: fixed;
+    z-index: 10000;
+    .logo {
+      display: none;
+    }
+    .header-right {
+      position: fixed;
+      right: 4rem;
+      span {
+        display: none;
+      }
+    }
+    .header-menu {
+      flex-direction: column;
+      position: fixed;
+      gap: 0;
+      width: 100vw;
+      background: rgb(0 0 0 / 50%);
+      backdrop-filter: blur(1rem);
+      box-shadow: rgb(0 0 0 / 46%) 0px 8px 24px;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease;
+      .header-item {
+        width: 100%;
+      }
+      .header-link {
+        display: block;
+        width: 100%;
+        padding: 2rem 0rem;
+        text-align: center;
+      }
+      &.active {
+        top: 20px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .header-right {
+      .fa-bars {
+        display: inline-block;
+        transition: all 0.2s ease;
+      }
+      .fa-times {
+        transform: rotate(360deg);
+        transition: all 0.2s ease;
+      }
+    }
+  }
   .logo {
     h2 {
       color: white;
@@ -47,12 +99,56 @@
 }
 @media screen and (max-width: 767px) {
   .header {
+    top: 30px;
+    padding: 0rem 1rem;
+    &.fixed {
+      position: fixed;
+      z-index: 10000;
+      .logo {
+        display: none;
+      }
+      .header-right {
+        position: fixed;
+        right: 1rem;
+        span {
+          display: none;
+        }
+      }
+    }
     &-menu {
-      display: none;
+      flex-direction: column;
+      position: fixed;
+      gap: 0;
+      width: 100vw;
+      background: rgb(0 0 0 / 50%);
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease;
+      .header-item {
+        width: 100%;
+      }
+      .header-link {
+        display: block;
+        width: 100%;
+        padding: 1rem 0rem;
+        text-align: center;
+      }
+      &.active {
+        top: 35px;
+        opacity: 1;
+        visibility: visible;
+      }
     }
     &-right {
       .fa-bars {
         display: inline-block;
+        transition: all 0.2s ease;
+      }
+      .fa-times {
+        transform: rotate(360deg);
+        transition: all 0.2s ease;
       }
     }
   }

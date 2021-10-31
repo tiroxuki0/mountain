@@ -16,4 +16,15 @@ window.onscroll = () => {
             });
         }
     });
+
+    if(window.scrollY > 40 ){
+        document.querySelector(".header").classList.add("fixed")
+    }else{
+        document.querySelector(".header").classList.remove("fixed")
+    }
+}
+
+document.querySelector(".fa-bars").onclick = () => {
+    document.querySelector(".fa-bars").classList.toggle("fa-times")
+    document.querySelector(".header-menu").classList.toggle("active")
 }
