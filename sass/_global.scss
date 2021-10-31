@@ -206,6 +206,9 @@ body {
     }
     .scroll {
       right: 0;
+      a {
+        padding-right: 1rem;
+      }
     }
     .background-wrapper {
       &::after {

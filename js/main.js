@@ -21,6 +21,8 @@ window.onscroll = () => {
         document.querySelector(".header").classList.add("fixed")
     }else{
         document.querySelector(".header").classList.remove("fixed")
+        document.querySelector(".header-menu").classList.remove("active")
+        document.querySelector(".fa-bars").classList.remove("fa-times")
     }
 }
 
