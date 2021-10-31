@@ -6,7 +6,7 @@ window.onscroll = () => {
     section.forEach(sec => {
         let top = window.scrollY
         let height = sec.offsetHeight
-        let position = sec.offsetTop - 600
+        let position = sec.offsetTop - 300
         let id = sec.getAttribute("id")
 
         if(top >= position && top < position + height ){

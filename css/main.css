@@ -21,6 +21,7 @@ html {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -93,6 +94,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 24px;
+  cursor: pointer;
 }
 .wrapper .social span {
   color: white;
@@ -217,6 +219,7 @@ body {
   top: 387px;
   z-index: 3;
   gap: 32px;
+  padding-top: 20rem;
 }
 
 .title {
@@ -323,6 +326,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .header-right .fa-bars {
   display: none;
@@ -382,6 +386,7 @@ body {
 .section3 {
   width: 90vw;
   margin: 0px 0px 200px 50px;
+  padding-top: 5rem;
   position: relative;
   z-index: 100;
   display: flex;

@@ -19,6 +19,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 24px;
+    cursor: pointer;
     span {
       color: white;
       font-size: 18px;
@@ -158,6 +159,7 @@ body {
   top: 387px;
   z-index: 3;
   gap: 32px;
+  padding-top: 20rem;
 }
 
 .title {

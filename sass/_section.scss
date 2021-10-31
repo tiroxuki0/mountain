@@ -35,11 +35,13 @@
 .section2 {
   flex-direction: row-reverse;
 }
+
 .section1,
 .section2,
 .section3 {
   width: 90vw;
   margin: 0px 0px 200px 50px;
+  padding-top: 5rem;
   position: relative;
   z-index: 100;
   display: flex;
